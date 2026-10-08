@@ -43,11 +43,12 @@
         try {
           var stored = localStorage.getItem('theme');
           var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          if (stored === 'dark' || (!stored && prefersDark)) {
-            document.documentElement.classList.add('dark');
-          } else {
-            document.documentElement.classList.remove('dark');
-          }
+          var useDark =
+            stored === 'dark' || ((stored !== 'light' && stored !== 'dark') && prefersDark);
+          document.documentElement.classList.toggle('dark', useDark);
+          document
+            .querySelector('meta[name="theme-color"]')
+            ?.setAttribute('content', useDark ? '#07090f' : '#003D6B');
         } catch (e) {}
       })();
     </script>

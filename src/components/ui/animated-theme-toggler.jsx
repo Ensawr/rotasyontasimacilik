@@ -3,6 +3,7 @@ import { Moon, Sun } from 'lucide-react';
 import { flushSync } from 'react-dom';
 import { useTranslation } from 'react-i18next';
 import { cn } from '../../lib/utils';
+import { applyThemeClass } from '../../theme';
 
 function polygonCollapsed(point, vertexCount) {
   const pairs = Array.from({ length: vertexCount }, () => point).join(', ');
@@ -198,12 +199,16 @@ export function AnimatedThemeToggler({
 
     const applyTheme = () => {
       const newTheme = !isDark;
-      document.documentElement.classList.toggle('dark');
+      applyThemeClass(newTheme);
       if (isControlled) {
         onThemeChange?.(newTheme ? 'dark' : 'light');
       } else {
         setInternalIsDark(newTheme);
-        localStorage.setItem('theme', newTheme ? 'dark' : 'light');
+        try {
+          localStorage.setItem('theme', newTheme ? 'dark' : 'light');
+        } catch {
+          // ignore
+        }
       }
     };
 
