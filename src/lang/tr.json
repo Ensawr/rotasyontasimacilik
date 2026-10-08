@@ -1,0 +1,205 @@
+{
+  "brand": {
+    "name": "Rotasyon",
+    "suffix": "Taşımacılık",
+    "full": "Rotasyon Taşımacılık",
+    "legal": "Rotasyon Taşımacılık Ve Lojistik Hizmetleri Ltd. Şti."
+  },
+  "nav": {
+    "home": "Anasayfa",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "language": "Dil"
+  },
+  "theme": {
+    "toLight": "Açık temaya geç",
+    "toDark": "Koyu temaya geç",
+    "toggle": "Temayı değiştir"
+  },
+  "loader": {
+    "aria": "Yükleniyor",
+    "text": "Yükünüz yola çıkıyor..."
+  },
+  "seo": {
+    "home": {
+      "title": "Rotasyon Taşımacılık | Nakliye ve Lojistik",
+      "description": "Rotasyon Taşımacılık; nakliye, taşımacılık ve lojistik hizmetleri sunar. Komple, parsiyel ve şehirlerarası taşıma ihtiyaçlarınız için bizimle iletişime geçin."
+    },
+    "about": {
+      "title": "Hakkımızda | Rotasyon Taşımacılık",
+      "description": "Rotasyon Taşımacılık hakkında bilgi alın. İstanbul merkezli nakliye, taşımacılık ve lojistik yaklaşımımızı, vizyonumuzu ve değerlerimizi keşfedin."
+    },
+    "contact": {
+      "title": "İletişim | Rotasyon Taşımacılık",
+      "description": "Rotasyon Taşımacılık iletişim: telefon, adres ve WhatsApp teklif formu. Nakliye ve taşımacılık talepleriniz için bize ulaşın."
+    },
+    "notFound": {
+      "title": "Sayfa Bulunamadı | Rotasyon Taşımacılık",
+      "description": "Aradığınız sayfa bulunamadı. Rotasyon Taşımacılık ana sayfasına veya iletişim sayfasına geçebilirsiniz."
+    }
+  },
+  "home": {
+    "heroTitle": "Nakliye, taşımacılık ve lojistikte güvenilir çözümler",
+    "heroText": "Rotasyon Taşımacılık olarak Türkiye genelinde güvenilir, zamanında ve çözüm odaklı nakliye ve lojistik hizmetleri sunuyoruz. Operasyon disiplinimiz, sahadaki tecrübemiz ve müşteriye özel planlama yaklaşımımızla yükünüzü çıkış noktasından teslimata kadar sorunsuz şekilde ulaştırıyoruz.",
+    "ctaAbout": "Bizi Tanıyın",
+    "ctaQuote": "Teklif Al",
+    "whyTitle": "Neden Rotasyon Taşımacılık?",
+    "whyText": "Lojistikte fark yaratan unsur yalnızca araç filosu değil; planlama kalitesi, iletişim hızı ve saha disiplinidir. Rotasyon Taşımacılık olarak her sevkiyatı ölçülebilir bir süreç olarak ele alıyor, müşterilerimizin iş sürekliliğine katkı sağlayacak şekilde yönetiyoruz.",
+    "reasons": {
+      "timely": {
+        "title": "Zamanında Teslimat",
+        "text": "Operasyon planlamamızı rota yoğunluğu, teslim penceresi ve saha koşullarına göre şekillendiriyoruz. Böylece yükünüzün varış süresini öngörülebilir hale getiriyor, iş süreçlerinizin aksamamasını sağlıyoruz."
+      },
+      "safe": {
+        "title": "Güvenli Taşıma",
+        "text": "Yükleme, sevkiyat ve teslimat adımlarında düzenli kontrol uyguluyoruz. Profesyonel saha ekibimiz ve güvenli taşıma prosedürlerimizle yükünüzün bütünlüğünü korumayı önceliklendiriyoruz."
+      },
+      "flexible": {
+        "title": "Esnek Çözümler",
+        "text": "Parsiyel, komple veya proje bazlı taşımalarda ihtiyacınıza uygun model öneriyoruz. Değişen iş hacminize hızlı uyum sağlayarak lojistik operasyonunuzu daha verimli yönetmenize destek oluyoruz."
+      }
+    },
+    "servicesTitle": "Nakliye ve Taşımacılık Hizmetlerimiz",
+    "servicesText": "Rotasyon Taşımacılık olarak komple taşımacılık, parsiyel taşımacılık, şehirlerarası nakliye ve proje lojistiği ihtiyaçlarınıza yönelik çözümler sunuyoruz. Düzenli sevkiyatlarda ve özel projelerde güvenilir bir iş ortağı olarak yanınızdayız.",
+    "servicesCta": "Bu hizmet için teklif alın",
+    "services": {
+      "ftl": {
+        "title": "Komple Taşımacılık",
+        "text": "Tek seferde büyük hacimli yükleriniz için komple nakliye ve taşımacılık kapasitesini size özel planlıyoruz. Kalkıştan varışa kadar süreci şeffaf şekilde takip ederek teslimatı disiplinle tamamlıyoruz."
+      },
+      "ltl": {
+        "title": "Parsiyel Taşımacılık",
+        "text": "Daha küçük ölçekli sevkiyatlarda maliyet avantajı sağlayan parsiyel nakliye çözümleri sunuyoruz. Ortak rota planlamasıyla hem ekonomik hem de zamanında teslimat hedefliyoruz."
+      },
+      "project": {
+        "title": "Proje Lojistiği",
+        "text": "Özel ebatlı, ağır veya dikkat gerektiren yüklerde saha keşfinden araç seçimine kadar süreci birlikte kurguluyoruz. Her proje için ölçülebilir ve güvenli bir taşıma planı oluşturuyoruz."
+      },
+      "intercity": {
+        "title": "Şehirlerarası Taşımacılık",
+        "text": "Türkiye genelindeki operasyon ağımızla şehirlerarası nakliye ve yük taşıma sevkiyatlarınızı düzenli hatlar üzerinden yönetiyoruz. Teslimat noktalarına hızlı ve düzenli ulaşım için rota disiplinini ön planda tutuyoruz."
+      }
+    },
+    "processTitle": "Nasıl Çalışıyoruz?",
+    "processText": "Her taşıma talebini standart bir prosedürle değil, ihtiyaca göre kurgulanmış bir operasyon planıyla ele alıyoruz. Süreç boyunca iletişimimizi açık tutarak sürprizleri azaltmayı hedefliyoruz.",
+    "steps": {
+      "01": {
+        "title": "Talep ve Analiz",
+        "text": "Yükünüzün niteliğini, teslim noktasını ve zaman beklentinizi dinleyerek size en uygun taşıma modelini belirliyoruz."
+      },
+      "02": {
+        "title": "Planlama",
+        "text": "Rota, araç tipi ve yükleme düzenini netleştiriyor; sürecin her aşamasında sorumluluk alanlarını açıkça tanımlıyoruz."
+      },
+      "03": {
+        "title": "Sevkiyat",
+        "text": "Operasyon ekibimiz yükünüzü güvenli şekilde yola çıkarıyor ve varış noktasına kadar süreci takip altında tutuyor."
+      },
+      "04": {
+        "title": "Teslimat",
+        "text": "Varışta kontrol ve teslim prosedürlerini tamamlayarak süreci raporluyor, sonraki sevkiyatlarınız için geri bildirim alıyoruz."
+      }
+    },
+    "ctaTitle": "Taşıma sürecinizi birlikte planlayalım",
+    "ctaText": "Sevkiyat ihtiyaçlarınızı paylaşın; size uygun rota, araç ve zaman planını kısa sürede netleştirelim. Profesyonel ekibimiz teklif sürecinden teslimata kadar yanınızda olsun.",
+    "ctaButton": "İletişime Geç"
+  },
+  "about": {
+    "eyebrow": "Hakkımızda",
+    "intro1": "Rotasyon Taşımacılık; güven, hız ve şeffaflığı aynı operasyon dilinde birleştiren bir nakliye ve lojistik markasıdır. Amacımız yalnızca yük taşımak değil; işletmelerin tedarik zincirine düzen, öngörülebilirlik ve güven duygusu kazandırmaktır.",
+    "intro2": "Sahada edindiğimiz tecrübeyi planlı bir süreç yönetimiyle birleştirerek şehirlerarası taşımacılıktan proje lojistiğine kadar geniş bir hizmet yelpazesi sunuyoruz. Müşterilerimizle uzun soluklu iş ortaklıkları kurmayı; her sevkiyatta aynı kalite standardını korumayı önemsiyoruz.",
+    "ctaServices": "Nakliye ve taşımacılık hizmetlerimizi inceleyin",
+    "ctaContact": "Rotasyon Taşımacılık ile iletişime geçin",
+    "visionTitle": "Vizyonumuz",
+    "visionText": "Türkiye'nin en güvenilir ve tercih edilen lojistik markalarından biri olmak; teknoloji destekli, ölçülebilir ve sürdürülebilir operasyon anlayışıyla sektöre yön vermektir. Kısa vadeli taşımaların ötesinde, işletmelerin büyümesine eşlik eden güçlü bir lojistik altyapısı inşa etmeyi hedefliyoruz.",
+    "missionTitle": "Misyonumuz",
+    "missionText": "Müşterilerimizin yüklerini zamanında, güvenli ve ekonomik şekilde ulaştırarak iş süreçlerine değer katmak; her taşımayı aynı kalite standardıyla tamamlamaktır. İhtiyaca özel çözümler üretirken iletişimi açık tutar, operasyonu şeffaf ve takip edilebilir şekilde yönetiriz.",
+    "valuesTitle": "Değerlerimiz",
+    "valuesText": "Çalışma kültürümüzü oluşturan ilkeler; sahadaki kararlarımızdan müşteri iletişimimize kadar tüm süreçlere yön verir. Bu değerler sayesinde her projede tutarlı, güvenilir ve çözüm odaklı bir hizmet sunarız.",
+    "values": {
+      "trust": {
+        "title": "Güvenilirlik",
+        "text": "Verdiğimiz sözün arkasında durur, taşıma sürecinin her adımında şeffaf ve hesap verebilir bir yaklaşım sergileriz. Müşterilerimizin bize duyduğu güven, operasyon kalitemizin temel ölçütüdür."
+      },
+      "time": {
+        "title": "Zaman Disiplini",
+        "text": "Lojistikte gecikme yalnızca bir gecikme değil; iş zincirinde maliyet ve itibar kaybıdır. Bu nedenle planlama, saha koordinasyonu ve teslimat takibini aynı hassasiyetle yürütürüz."
+      },
+      "customer": {
+        "title": "Müşteri Odaklılık",
+        "text": "Her firmanın taşıma ihtiyacı farklıdır. Standart paketler yerine ihtiyaca özel çözümler üretir, süreç boyunca hızlı ve net iletişim kurarak iş ortaklığımızı güçlendiririz."
+      },
+      "growth": {
+        "title": "Sürekli Gelişim",
+        "text": "Saha deneyiminden aldığımız geri bildirimlerle operasyonumuzu düzenli olarak iyileştiririz. Daha güvenli, daha verimli ve daha öngörülebilir bir lojistik hizmeti sunmayı hedefleriz."
+      }
+    },
+    "approachTitle": "Yaklaşımımız",
+    "approachText": "Her taşıma talebini tek tip bir hizmet olarak görmüyoruz. Yükün niteliği, teslim takvimi ve operasyonel riskleri birlikte değerlendirerek size özel bir plan oluşturuyoruz. Bu yaklaşım; daha az sürpriz, daha net iletişim ve daha yüksek teslimat kalitesi anlamına gelir. Rotasyon Taşımacılık olarak amacımız, yalnızca bir sevkiyatı tamamlamak değil; bir sonraki sevkiyatınızda da tercih edilen güvenilir çözüm ortağınız olmaktır."
+  },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "text": "Aradığınız sayfa taşınmış veya hiç var olmamış olabilir. Rotasyon Taşımacılık ana sayfasına dönebilir veya bizimle iletişime geçebilirsiniz.",
+    "home": "Ana Sayfaya Dön",
+    "contact": "İletişim"
+  },
+  "contact": {
+    "eyebrow": "İletişim",
+    "title": "Rotasyon Taşımacılık İletişim",
+    "intro": "Rotasyon Taşımacılık ile iletişime geçin. Nakliye ve taşımacılık talebinizi formu doldurarak WhatsApp üzerinden iletebilir veya telefon ve adres bilgilerimizden bize ulaşabilirsiniz.",
+    "cards": {
+      "phone": {
+        "title": "Telefon",
+        "detail": "WhatsApp destek hattı"
+      },
+      "address": {
+        "title": "Adres",
+        "text": "15 Temmuz Mahallesi İsmet Yılmaz Caddesi B2A-4 Blok No:19 Esenler/İstanbul",
+        "detail": ""
+      },
+      "hours": {
+        "title": "Çalışma Saatleri",
+        "text": "Pazartesi – Cumartesi",
+        "detail": "09:00 – 18:00"
+      }
+    },
+    "fields": {
+      "fullName": "Ad Soyad",
+      "company": "Firma Adı",
+      "optional": "(Opsiyonel)",
+      "cargo": "Taşınacak Yük",
+      "cargoPlaceholder": "Örn: 10 palet gıda ürünü",
+      "cargoWeight": "Yük Ağırlığı",
+      "cargoWeightPlaceholder": "Örn: 2.5 ton",
+      "fromAddress": "Çıkış Adresi",
+      "toAddress": "Varış Adresi"
+    },
+    "submit": "WhatsApp'tan Teklif Al",
+    "floatWhatsApp": "WhatsApp ile iletişime geç",
+    "validation": {
+      "title": "Eksik Bilgi",
+      "intro": "Lütfen aşağıdaki alanları doldurun:",
+      "required": "{{field}} alanının doldurulması gerekmektedir.",
+      "ok": "Tamam"
+    },
+    "whatsapp": {
+      "greeting": "Merhaba, nakliye hizmeti hakkında bilgi almak istiyorum.",
+      "fullName": "Ad Soyad",
+      "company": "Firma",
+      "cargo": "Taşınacak Yük",
+      "cargoWeight": "Yük Ağırlığı",
+      "fromAddress": "Çıkış Adresi",
+      "toAddress": "Varış Adresi",
+      "closing": "Bu taşıma için fiyat ve detaylı bilgi almak istiyorum. Yardımcı olabilir misiniz?"
+    }
+  },
+  "footer": {
+    "tagline": "Rotasyon Taşımacılık olarak güvenilir nakliye ve lojistik çözümleriyle yükünüzü zamanında ve güvenle ulaştırıyoruz.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "contact": "İletişim",
+    "phone": "Telefon",
+    "rights": "Tüm hakları saklıdır."
+  }
+}

@@ -1,13 +1,260 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 bg-brand-50 font-sans text-slate-800 antialiased transition-colors duration-300 dark:bg-ink dark:text-slate-100;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 10% -10%, rgba(0, 61, 107, 0.08), transparent),
+      radial-gradient(ellipse 60% 40% at 100% 0%, rgba(0, 128, 129, 0.08), transparent);
+  }
+
+  .dark body {
+    background-image:
+      radial-gradient(ellipse 70% 45% at 10% -5%, rgba(255, 255, 255, 0.025), transparent),
+      radial-gradient(ellipse 50% 35% at 100% 0%, rgba(234, 136, 37, 0.05), transparent);
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html[data-magicui-theme-vt='active']::view-transition-group(root) {
+  animation-duration: var(--magicui-theme-toggle-vt-duration, 400ms);
+}
+
+html[data-magicui-theme-vt='active']::view-transition-old(root),
+html[data-magicui-theme-vt='active']::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+html[data-magicui-theme-vt='active']::view-transition-new(root) {
+  clip-path: var(--magicui-theme-vt-clip-from, circle(0%));
+}
+
+@keyframes truck-drive {
+  0% {
+    left: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    left: 100%;
+    transform: translateX(0);
+  }
+}
+
+@keyframes truck-wheel {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes road-dash {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.truck-drive {
+  animation: truck-drive 1.7s linear infinite;
+}
+
+.truck-wheel {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: truck-wheel 0.4s linear infinite;
+}
+
+.road-dash {
+  animation: road-dash 0.65s linear infinite;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.96);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes hero-line {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes hero-mote-twinkle {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(0.85);
+    opacity: 0.25;
+  }
+  40% {
+    transform: translate3d(2px, -3px, 0) scale(1.15);
+    opacity: 0.95;
+  }
+  70% {
+    transform: translate3d(-1px, -5px, 0) scale(1);
+    opacity: 0.55;
+  }
+}
+
+.hero-animate {
+  opacity: 0;
+  animation: hero-fade-up 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero-line {
+  transform-origin: left;
+  animation: hero-line 1s ease 0.55s forwards;
+  transform: scaleX(0);
+}
+
+.hero-atmosphere {
+  overflow: hidden;
+}
+
+.hero-mote-track {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition:
+    left 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+    top 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: left, top;
+}
+
+.hero-mote {
+  display: block;
+  border-radius: 9999px;
+  opacity: 0.7;
+  animation: hero-mote-twinkle 7s ease-in-out infinite;
+}
+
+.hero-mote-brand {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow:
+    0 0 4px 1px rgba(0, 61, 107, 0.45),
+    0 0 10px 2px rgba(0, 61, 107, 0.2);
+}
+
+.hero-mote-teal {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow:
+    0 0 4px 1px rgba(0, 128, 129, 0.55),
+    0 0 10px 2px rgba(0, 128, 129, 0.22);
+}
+
+.hero-mote-accent {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow:
+    0 0 4px 1px rgba(234, 136, 37, 0.55),
+    0 0 10px 2px rgba(234, 136, 37, 0.22);
+}
+
+.dark .hero-mote-brand {
+  background: rgba(210, 230, 245, 0.9);
+  box-shadow:
+    0 0 4px 1px rgba(122, 175, 208, 0.55),
+    0 0 12px 2px rgba(122, 175, 208, 0.25);
+}
+
+.dark .hero-mote-teal {
+  background: rgba(210, 245, 245, 0.9);
+  box-shadow:
+    0 0 4px 1px rgba(0, 128, 129, 0.55),
+    0 0 12px 2px rgba(0, 128, 129, 0.25);
+}
+
+.dark .hero-mote-accent {
+  background: rgba(255, 235, 210, 0.9);
+  box-shadow:
+    0 0 4px 1px rgba(234, 136, 37, 0.55),
+    0 0 12px 2px rgba(234, 136, 37, 0.25);
+}
+
+.card-hover {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(38, 56, 77, 0.1);
+}
+
+.dark .card-hover:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .truck-drive,
+  .truck-wheel,
+  .road-dash,
+  .hero-mote {
+    animation: none;
+  }
+
+  .hero-mote-track {
+    transition: none !important;
+  }
+
+  .truck-drive {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .reveal,
+  .reveal-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .hero-animate {
+    opacity: 1;
+    animation: none;
+    filter: none;
+  }
+
+  .hero-line {
+    transform: scaleX(1);
+    animation: none;
+  }
+
+  .card-hover,
+  .card-hover:hover {
+    transform: none;
+    transition: none;
+  }
 }

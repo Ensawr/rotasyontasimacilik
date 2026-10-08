@@ -1,0 +1,205 @@
+{
+  "brand": {
+    "name": "Rotasyon",
+    "suffix": "Taşımacılık",
+    "full": "Rotasyon Taşımacılık",
+    "legal": "Rotasyon Taşımacılık Ve Lojistik Hizmetleri Ltd. Şti."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language"
+  },
+  "theme": {
+    "toLight": "Switch to light theme",
+    "toDark": "Switch to dark theme",
+    "toggle": "Toggle theme"
+  },
+  "loader": {
+    "aria": "Loading",
+    "text": "Your cargo is on the way..."
+  },
+  "seo": {
+    "home": {
+      "title": "Rotasyon Taşımacılık | Freight and Logistics",
+      "description": "Rotasyon Taşımacılık provides freight, transport, and logistics services. Contact us for full truckload, partial load, and intercity shipping needs."
+    },
+    "about": {
+      "title": "About Us | Rotasyon Taşımacılık",
+      "description": "Learn about Rotasyon Taşımacılık. Discover our Istanbul-based freight, transport, and logistics approach, vision, and values."
+    },
+    "contact": {
+      "title": "Contact | Rotasyon Taşımacılık",
+      "description": "Contact Rotasyon Taşımacılık: phone, address, and WhatsApp quote form. Reach us for freight and transport requests."
+    },
+    "notFound": {
+      "title": "Page Not Found | Rotasyon Taşımacılık",
+      "description": "The page you are looking for was not found. Return to the Rotasyon Taşımacılık home page or contact us."
+    }
+  },
+  "home": {
+    "heroTitle": "Reliable solutions in freight, transport, and logistics",
+    "heroText": "As Rotasyon Taşımacılık, we provide reliable, on-time, and solution-focused freight and logistics services across Türkiye. With operational discipline, field experience, and tailored planning, we deliver your cargo smoothly from pickup to delivery.",
+    "ctaAbout": "About Us",
+    "ctaQuote": "Get a Quote",
+    "whyTitle": "Why Rotasyon Taşımacılık?",
+    "whyText": "What sets logistics apart is not only the fleet, but planning quality, communication speed, and field discipline. At Rotasyon Taşımacılık, we manage every shipment as a measurable process that supports your business continuity.",
+    "reasons": {
+      "timely": {
+        "title": "On-Time Delivery",
+        "text": "We plan operations based on route density, delivery windows, and field conditions. This makes arrival times predictable and helps keep your workflows uninterrupted."
+      },
+      "safe": {
+        "title": "Secure Transport",
+        "text": "We apply regular checks during loading, transit, and delivery. Our professional field team and secure transport procedures prioritize the integrity of your cargo."
+      },
+      "flexible": {
+        "title": "Flexible Solutions",
+        "text": "We recommend the right model for LTL, FTL, or project-based shipments. We adapt quickly to changing volumes and help you run logistics more efficiently."
+      }
+    },
+    "servicesTitle": "Our Freight and Transport Services",
+    "servicesText": "At Rotasyon Taşımacılık we provide solutions for full truckload, partial load, intercity freight, and project logistics. We stand beside you as a reliable partner for both regular shipments and special projects.",
+    "servicesCta": "Get a quote for this service",
+    "services": {
+      "ftl": {
+        "title": "Full Truckload",
+        "text": "We plan full truckload capacity specifically for large-volume shipments in a single run. We track the process transparently from departure to arrival and complete delivery with discipline."
+      },
+      "ltl": {
+        "title": "Partial Load Transport",
+        "text": "We offer cost-efficient partial load freight solutions for smaller shipments. Shared route planning helps us deliver both economically and on time."
+      },
+      "project": {
+        "title": "Project Logistics",
+        "text": "For oversized, heavy, or sensitive cargo, we plan together from site survey to vehicle selection. We build a measurable and secure transport plan for every project."
+      },
+      "intercity": {
+        "title": "Intercity Transport",
+        "text": "Through our nationwide network, we manage intercity freight and cargo shipments on regular lines. Route discipline is our priority for fast and consistent deliveries."
+      }
+    },
+    "processTitle": "How We Work",
+    "processText": "We handle every transport request with a tailored operations plan rather than a one-size-fits-all procedure. Clear communication throughout the process helps minimize surprises.",
+    "steps": {
+      "01": {
+        "title": "Request & Analysis",
+        "text": "We listen to your cargo type, delivery point, and timing expectations to define the most suitable transport model."
+      },
+      "02": {
+        "title": "Planning",
+        "text": "We clarify the route, vehicle type, and loading setup, and clearly define responsibilities at every stage."
+      },
+      "03": {
+        "title": "Shipment",
+        "text": "Our operations team sends your cargo safely on the road and monitors the process until arrival."
+      },
+      "04": {
+        "title": "Delivery",
+        "text": "At arrival we complete checks and handover, report the process, and collect feedback for future shipments."
+      }
+    },
+    "ctaTitle": "Let's plan your transport together",
+    "ctaText": "Share your shipment needs and we will quickly clarify the right route, vehicle, and schedule. Our professional team supports you from quote to delivery.",
+    "ctaButton": "Contact Us"
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "intro1": "Rotasyon Taşımacılık is a freight and logistics brand that unites trust, speed, and transparency in one operational language. Our goal is not only to move cargo, but to bring order, predictability, and confidence to your supply chain.",
+    "intro2": "By combining field experience with structured process management, we offer a wide range of services from intercity transport to project logistics. We value long-term partnerships and the same quality standard in every shipment.",
+    "ctaServices": "Explore our freight and transport services",
+    "ctaContact": "Contact Rotasyon Taşımacılık",
+    "visionTitle": "Our Vision",
+    "visionText": "To become one of Türkiye's most trusted and preferred logistics brands, guiding the industry with technology-supported, measurable, and sustainable operations. Beyond short-term shipments, we aim to build a strong logistics infrastructure that grows with our clients.",
+    "missionTitle": "Our Mission",
+    "missionText": "To add value to our clients' workflows by delivering cargo on time, safely, and cost-effectively—completing every transport with the same quality standard. We create tailored solutions, keep communication clear, and manage operations transparently.",
+    "valuesTitle": "Our Values",
+    "valuesText": "The principles that shape our culture guide every decision—from field actions to client communication. These values help us deliver consistent, reliable, and solution-focused service in every project.",
+    "values": {
+      "trust": {
+        "title": "Reliability",
+        "text": "We stand behind our word and take a transparent, accountable approach at every step of transport. The trust our clients place in us is the core measure of our operational quality."
+      },
+      "time": {
+        "title": "Time Discipline",
+        "text": "In logistics, a delay is more than lateness—it means cost and reputation risk across the chain. That is why we manage planning, field coordination, and delivery tracking with equal care."
+      },
+      "customer": {
+        "title": "Customer Focus",
+        "text": "Every company's transport needs are different. Instead of one-size-fits-all packages, we create tailored solutions and strengthen partnerships through fast, clear communication."
+      },
+      "growth": {
+        "title": "Continuous Improvement",
+        "text": "We regularly improve operations based on field feedback. Our goal is safer, more efficient, and more predictable logistics service."
+      }
+    },
+    "approachTitle": "Our Approach",
+    "approachText": "We do not treat every transport request as a standard service. We evaluate cargo characteristics, delivery schedule, and operational risks together to build a plan for you. This means fewer surprises, clearer communication, and higher delivery quality. At Rotasyon Taşımacılık, our aim is not only to complete one shipment, but to remain your preferred trusted partner for the next one as well."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you are looking for may have moved or never existed. You can return to the Rotasyon Taşımacılık home page or contact us.",
+    "home": "Back to Home",
+    "contact": "Contact"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Contact Rotasyon Taşımacılık",
+    "intro": "Get in touch with Rotasyon Taşımacılık. Send your freight and transport request via WhatsApp by filling out the form, or reach us by phone and address.",
+    "cards": {
+      "phone": {
+        "title": "Phone",
+        "detail": "WhatsApp support line"
+      },
+      "address": {
+        "title": "Address",
+        "text": "15 Temmuz Mahallesi İsmet Yılmaz Caddesi B2A-4 Blok No:19 Esenler/İstanbul",
+        "detail": ""
+      },
+      "hours": {
+        "title": "Working Hours",
+        "text": "Monday – Saturday",
+        "detail": "09:00 – 18:00"
+      }
+    },
+    "fields": {
+      "fullName": "Full Name",
+      "company": "Company Name",
+      "optional": "(Optional)",
+      "cargo": "Cargo Description",
+      "cargoPlaceholder": "e.g. 10 pallets of food products",
+      "cargoWeight": "Cargo Weight",
+      "cargoWeightPlaceholder": "e.g. 2.5 tons",
+      "fromAddress": "Pickup Address",
+      "toAddress": "Delivery Address"
+    },
+    "submit": "Get a Quote on WhatsApp",
+    "floatWhatsApp": "Contact us on WhatsApp",
+    "validation": {
+      "title": "Missing Information",
+      "intro": "Please fill in the following fields:",
+      "required": "{{field}} is required.",
+      "ok": "OK"
+    },
+    "whatsapp": {
+      "greeting": "Hello, I would like information about your freight services.",
+      "fullName": "Full Name",
+      "company": "Company",
+      "cargo": "Cargo",
+      "cargoWeight": "Cargo Weight",
+      "fromAddress": "Pickup Address",
+      "toAddress": "Delivery Address",
+      "closing": "I would like a quote and detailed information for this shipment. Can you help?"
+    }
+  },
+  "footer": {
+    "tagline": "As Rotasyon Taşımacılık, we deliver your cargo on time and safely with reliable freight and logistics solutions.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "phone": "Phone",
+    "rights": "All rights reserved."
+  }
+}
