@@ -67,6 +67,9 @@
     },
     "servicesTitle": "Nakliye ve Taşımacılık Hizmetlerimiz",
     "servicesText": "Rotasyon Taşımacılık olarak komple taşımacılık, parsiyel taşımacılık, şehirlerarası nakliye ve proje lojistiği ihtiyaçlarınıza yönelik çözümler sunuyoruz. Düzenli sevkiyatlarda ve özel projelerde güvenilir bir iş ortağı olarak yanınızdayız.",
+    "servicesHighlightEyebrow": "Uzman ekip",
+    "servicesHighlightTitle": "Uzman, disiplinli bir operasyon kadrosu",
+    "servicesHighlightText": "Planlamadan teslimata kadar her adımı deneyimli sürücü ve operasyon ekibimiz yönetir. Aynı kalite standardını her sevkiyatta koruyarak yükünüzü güvenle ulaştırırız.",
     "servicesCta": "Bu hizmet için teklif alın",
     "services": {
       "ftl": {
@@ -84,6 +87,10 @@
       "intercity": {
         "title": "Şehirlerarası Taşımacılık",
         "text": "Türkiye genelindeki operasyon ağımızla şehirlerarası nakliye ve yük taşıma sevkiyatlarınızı düzenli hatlar üzerinden yönetiyoruz. Teslimat noktalarına hızlı ve düzenli ulaşım için rota disiplinini ön planda tutuyoruz."
+      },
+      "home": {
+        "title": "Evden Eve Nakliyat",
+        "text": "Eşyalarınızı özenle paketleyip güvenli şekilde yeni adresinize taşıyoruz. Şehir içi ve şehirlerarası evden eve nakliyatta planlı, düzenli ve sorunsuz bir taşınma süreci sunuyoruz."
       }
     },
     "processEyebrow": "Nasıl Çalışır?",
@@ -173,6 +180,10 @@
         "title": "Çalışma Saatleri",
         "text": "Pazartesi – Cumartesi",
         "detail": "09:00 – 18:00"
+      },
+      "email": {
+        "title": "E-posta",
+        "detail": "Teklif ve bilgi talepleri"
       }
     },
     "types": {
@@ -219,6 +230,7 @@
     "quickLinks": "Hızlı Bağlantılar",
     "contact": "İletişim",
     "phone": "Telefon",
+    "email": "E-posta",
     "rights": "Tüm hakları saklıdır."
   }
 }

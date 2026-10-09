@@ -15,6 +15,8 @@ import {
   FileText,
   Map,
   PackageCheck,
+  Users,
+  House,
 } from 'lucide-react';
 import Reveal from '../components/Reveal';
 import Seo from '../components/Seo';
@@ -26,6 +28,7 @@ const SERVICE_ANCHORS = {
   ltl: 'parsiyel-tasimacilik',
   project: 'proje-lojistigi',
   intercity: 'sehirlerarasi-tasimacilik',
+  home: 'evden-eve-nakliyat',
 };
 
 const SERVICE_MOTES = [
@@ -151,6 +154,12 @@ function Home() {
       ...t('home.services.intercity', { returnObjects: true }),
     },
   ];
+
+  const homeService = {
+    key: 'home',
+    Icon: House,
+    ...t('home.services.home', { returnObjects: true }),
+  };
 
   const steps = [
     {
@@ -343,6 +352,25 @@ function Home() {
             </p>
           </Reveal>
 
+          <Reveal delay={80} variant="fade">
+            <div className="mt-7 flex flex-col gap-4 border-l-2 border-accent-500 bg-white/80 px-5 py-5 backdrop-blur-sm sm:mt-8 sm:flex-row sm:items-start sm:gap-5 sm:px-6 dark:bg-ink-raised/80">
+              <div className="card-icon flex size-12 shrink-0 items-center justify-center bg-brand-50 text-brand-700/60 dark:bg-white/5 dark:text-white/45">
+                <Users className="size-6" strokeWidth={1.75} aria-hidden />
+              </div>
+              <div className="min-w-0">
+                <p className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-accent-600 dark:text-accent-400">
+                  {t('home.servicesHighlightEyebrow')}
+                </p>
+                <p className="mt-1.5 font-display text-lg font-semibold uppercase tracking-wide text-brand-900 dark:text-white sm:text-xl">
+                  {t('home.servicesHighlightTitle')}
+                </p>
+                <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-600 dark:text-slate-400 sm:text-base">
+                  {t('home.servicesHighlightText')}
+                </p>
+              </div>
+            </div>
+          </Reveal>
+
           <div className="mt-8 grid gap-5 sm:mt-10 sm:grid-cols-2 lg:gap-6">
             {services.map((item, index) => (
               <Reveal
@@ -376,6 +404,34 @@ function Home() {
               </Reveal>
             ))}
           </div>
+
+          <Reveal delay={140} variant="up">
+            <article
+              id={SERVICE_ANCHORS.home}
+              className="card-hover group mt-5 scroll-mt-28 border border-accent-500/25 bg-gradient-to-r from-white/95 via-white/95 to-accent-500/[0.06] p-5 backdrop-blur-sm sm:mt-6 sm:scroll-mt-32 sm:p-6 md:flex md:items-center md:gap-8 dark:border-accent-500/30 dark:from-ink-raised/95 dark:via-ink-raised/95 dark:to-accent-500/10"
+            >
+              <div className="flex shrink-0 items-center justify-between gap-3 md:flex-col md:items-start md:justify-start">
+                <div className="card-icon flex size-12 items-center justify-center bg-accent-500/10 text-accent-600 dark:text-accent-400 sm:size-14">
+                  <homeService.Icon className="size-6 sm:size-7" strokeWidth={1.75} aria-hidden />
+                </div>
+                <div className="accent-bar hidden h-0.5 w-10 bg-accent-500 md:mt-4 md:block" />
+              </div>
+              <div className="mt-4 min-w-0 flex-1 md:mt-0">
+                <h3 className="font-display text-lg font-semibold uppercase tracking-wide text-brand-800 dark:text-white sm:text-xl md:text-2xl">
+                  {homeService.title}
+                </h3>
+                <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-600 dark:text-slate-400 sm:text-base">
+                  {homeService.text}
+                </p>
+                <Link
+                  to="/iletisim#teklif-formu"
+                  className="link-underline mt-4 inline-flex text-sm font-semibold text-accent-600 transition hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300"
+                >
+                  {t('home.servicesCta')}
+                </Link>
+              </div>
+            </article>
+          </Reveal>
         </div>
       </section>
 

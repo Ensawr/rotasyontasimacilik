@@ -6,6 +6,7 @@ import {
   COMPANY_LEGAL_NAME,
   COMPANY_NAME,
   WHATSAPP_NUMBER,
+  EMAIL,
   absoluteUrl,
   getSiteUrl,
 } from '../constants';
@@ -22,6 +23,7 @@ function OrganizationJsonLd() {
     legalName: COMPANY_LEGAL_NAME,
     url: `${siteUrl}/`,
     telephone: WHATSAPP_NUMBER,
+    email: EMAIL,
     image: absoluteUrl('/logo512.png'),
     logo: {
       '@type': 'ImageObject',
@@ -42,6 +44,7 @@ function OrganizationJsonLd() {
       {
         '@type': 'ContactPoint',
         telephone: WHATSAPP_NUMBER,
+        email: EMAIL,
         contactType: 'customer service',
         areaServed: 'TR',
         availableLanguage: ['Turkish', 'English'],

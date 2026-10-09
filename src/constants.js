@@ -1,5 +1,6 @@
 export const WHATSAPP_NUMBER = '+905476827966';
 export const PHONE_DISPLAY = '0547 682 7966';
+export const EMAIL = 'tasimacilikrotasyon@gmail.com';
 
 export const COMPANY_NAME = 'Rotasyon Taşımacılık';
 export const COMPANY_LEGAL_NAME =

@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Phone, MapPin, Clock } from 'lucide-react';
+import { Phone, MapPin, Clock, Mail } from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { WHATSAPP_NUMBER, PHONE_DISPLAY } from '../constants';
+import { WHATSAPP_NUMBER, PHONE_DISPLAY, EMAIL } from '../constants';
 import Reveal from '../components/Reveal';
 import Seo from '../components/Seo';
 import OrganizationJsonLd, { WebPageJsonLd } from '../components/OrganizationJsonLd';
@@ -58,6 +58,14 @@ function Contact() {
       text: PHONE_DISPLAY,
       detail: t('contact.cards.phone.detail'),
       Icon: Phone,
+    },
+    {
+      key: 'email',
+      title: t('contact.cards.email.title'),
+      text: EMAIL,
+      detail: t('contact.cards.email.detail'),
+      href: `mailto:${EMAIL}`,
+      Icon: Mail,
     },
     {
       key: 'address',
@@ -206,19 +214,28 @@ function Contact() {
           </header>
         </Reveal>
 
-        <div className="mt-10 grid gap-4 sm:mt-12 sm:grid-cols-3 sm:gap-5">
-          {infoCards.map(({ key, title, text, detail, Icon }, index) => (
+        <div className="mt-10 grid gap-4 sm:mt-12 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4">
+          {infoCards.map(({ key, title, text, detail, href, Icon }, index) => (
             <Reveal key={key} delay={index * 100} variant="scale">
-              <div className="card-hover h-full border border-brand-100 bg-brand-50 p-5 sm:p-6 dark:border-white/10 dark:bg-ink-raised">
-                <div className="flex h-11 w-11 items-center justify-center bg-brand-700 text-white transition-transform duration-300 group-hover:scale-105 dark:bg-accent-500 dark:text-ink">
+              <div className="card-hover group h-full border border-brand-100 bg-brand-50 p-4 sm:p-5 dark:border-white/10 dark:bg-ink-raised">
+                <div className="flex h-10 w-10 items-center justify-center bg-brand-700 text-white transition-transform duration-300 group-hover:scale-105 dark:bg-accent-500 dark:text-ink">
                   <Icon className="size-5" aria-hidden />
                 </div>
-                <h2 className="mt-4 font-display text-lg font-semibold uppercase tracking-wide text-brand-800 dark:text-white">
+                <h2 className="mt-3 font-display text-base font-semibold uppercase tracking-wide text-brand-800 dark:text-white sm:text-lg">
                   {title}
                 </h2>
-                <p className="mt-2 text-sm font-medium text-slate-700 dark:text-slate-200 sm:text-base">
-                  {text}
-                </p>
+                {href ? (
+                  <a
+                    href={href}
+                    className="mt-2 inline-block break-all text-sm font-medium text-slate-700 transition hover:text-accent-600 dark:text-slate-200 dark:hover:text-accent-400 sm:text-base"
+                  >
+                    {text}
+                  </a>
+                ) : (
+                  <p className="mt-2 text-sm font-medium text-slate-700 dark:text-slate-200 sm:text-base">
+                    {text}
+                  </p>
+                )}
                 {detail ? (
                   <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{detail}</p>
                 ) : null}

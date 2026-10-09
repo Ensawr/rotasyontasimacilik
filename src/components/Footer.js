@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { PHONE_DISPLAY } from '../constants';
+import { EMAIL, PHONE_DISPLAY } from '../constants';
 import Reveal from './Reveal';
 
 function Footer() {
@@ -64,6 +64,11 @@ function Footer() {
                     {t('home.services.intercity.title')}
                   </Link>
                 </li>
+                <li>
+                  <Link to="/#evden-eve-nakliyat" className={linkClass}>
+                    {t('home.services.home.title')}
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -74,6 +79,15 @@ function Footer() {
               <ul className="mt-3 space-y-2 break-words text-sm text-slate-600 dark:text-white/75">
                 <li>
                   {t('footer.phone')}: {PHONE_DISPLAY}
+                </li>
+                <li>
+                  {t('footer.email')}:{' '}
+                  <a
+                    href={`mailto:${EMAIL}`}
+                    className="link-underline transition-colors hover:text-accent-600 dark:hover:text-accent-400"
+                  >
+                    {EMAIL}
+                  </a>
                 </li>
                 <li>{t('contact.cards.address.text')}</li>
               </ul>

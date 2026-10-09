@@ -67,6 +67,9 @@
     },
     "servicesTitle": "Our Freight and Transport Services",
     "servicesText": "At Rotasyon Taşımacılık we provide solutions for full truckload, partial load, intercity freight, and project logistics. We stand beside you as a reliable partner for both regular shipments and special projects.",
+    "servicesHighlightEyebrow": "Expert team",
+    "servicesHighlightTitle": "An expert, disciplined operations crew",
+    "servicesHighlightText": "Our experienced drivers and operations team manage every step from planning to delivery. We keep the same quality standard on every shipment and move your cargo safely.",
     "servicesCta": "Get a quote for this service",
     "services": {
       "ftl": {
@@ -84,6 +87,10 @@
       "intercity": {
         "title": "Intercity Transport",
         "text": "Through our nationwide network, we manage intercity freight and cargo shipments on regular lines. Route discipline is our priority for fast and consistent deliveries."
+      },
+      "home": {
+        "title": "Home Moving",
+        "text": "We carefully pack your belongings and move them safely to your new address. For local and intercity home moving, we deliver a planned, orderly, and stress-free relocation."
       }
     },
     "processEyebrow": "How It Works",
@@ -173,6 +180,10 @@
         "title": "Working Hours",
         "text": "Monday – Saturday",
         "detail": "09:00 – 18:00"
+      },
+      "email": {
+        "title": "Email",
+        "detail": "Quotes and information requests"
       }
     },
     "types": {
@@ -219,6 +230,7 @@
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "phone": "Phone",
+    "email": "Email",
     "rights": "All rights reserved."
   }
 }
