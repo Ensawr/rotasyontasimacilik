@@ -2,8 +2,6 @@
 User-agent: *
 Allow: /
 
-# Canlı domaininizi yazın (REACT_APP_SITE_URL ile aynı olmalı)
-# Sitemap: https://www.ornek-domain.com/sitemap.xml
-Sitemap: /sitemap.xml
+Sitemap: https://www.rotasyontasimacilik.com/sitemap.xml
 
 Disallow: /404

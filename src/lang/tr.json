@@ -18,9 +18,13 @@
     "toDark": "Koyu temaya geç",
     "toggle": "Temayı değiştir"
   },
+  "common": {
+    "scrollTop": "Sayfanın en üstüne çık"
+  },
   "loader": {
     "aria": "Yükleniyor",
-    "text": "Yükünüz yola çıkıyor..."
+    "text": "Yükünüz yola çıkıyor...",
+    "tagline": "Türkiyenin her yerine, güvenle."
   },
   "seo": {
     "home": {
@@ -82,24 +86,30 @@
         "text": "Türkiye genelindeki operasyon ağımızla şehirlerarası nakliye ve yük taşıma sevkiyatlarınızı düzenli hatlar üzerinden yönetiyoruz. Teslimat noktalarına hızlı ve düzenli ulaşım için rota disiplinini ön planda tutuyoruz."
       }
     },
-    "processTitle": "Nasıl Çalışıyoruz?",
-    "processText": "Her taşıma talebini standart bir prosedürle değil, ihtiyaca göre kurgulanmış bir operasyon planıyla ele alıyoruz. Süreç boyunca iletişimimizi açık tutarak sürprizleri azaltmayı hedefliyoruz.",
+    "processEyebrow": "Nasıl Çalışır?",
+    "processTitleLead": "5 adımda",
+    "processTitleAccent": "güvenli taşıma",
+    "processText": "Her taşıma talebini ihtiyaca göre kurgulanmış bir operasyon planıyla ele alıyoruz. Süreç boyunca iletişimimizi açık tutarak sürprizleri azaltmayı hedefliyoruz.",
     "steps": {
       "01": {
-        "title": "Talep ve Analiz",
-        "text": "Yükünüzün niteliğini, teslim noktasını ve zaman beklentinizi dinleyerek size en uygun taşıma modelini belirliyoruz."
+        "title": "Talep",
+        "text": "Sevkiyat talebiniz alınır; WhatsApp veya form üzerinden hızlıca ihtiyaçlarınız dinlenir ve yönlendirilirsiniz."
       },
       "02": {
-        "title": "Planlama",
-        "text": "Rota, araç tipi ve yükleme düzenini netleştiriyor; sürecin her aşamasında sorumluluk alanlarını açıkça tanımlıyoruz."
+        "title": "Teklif",
+        "text": "Yük bilgilerinize göre uygun araç ve rota belirlenir; size net ve şeffaf bir teklif paylaşılır."
       },
       "03": {
-        "title": "Sevkiyat",
-        "text": "Operasyon ekibimiz yükünüzü güvenli şekilde yola çıkarıyor ve varış noktasına kadar süreci takip altında tutuyor."
+        "title": "Planlama",
+        "text": "En verimli rota belirlenir; tarih, araç tipi ve teslimat penceresi yazılı olarak netleştirilir."
       },
       "04": {
+        "title": "Sevkiyat",
+        "text": "Yükünüz güvenle yola çıkar; Türkiye genelindeki operasyon ağımızla süreç takip altında tutulur."
+      },
+      "05": {
         "title": "Teslimat",
-        "text": "Varışta kontrol ve teslim prosedürlerini tamamlayarak süreci raporluyor, sonraki sevkiyatlarınız için geri bildirim alıyoruz."
+        "text": "Varışta kontrol ve teslim prosedürleri tamamlanır; süreç raporlanır, sonraki sevkiyatlarınız için hazırız."
       }
     },
     "ctaTitle": "Taşıma sürecinizi birlikte planlayalım",
@@ -165,12 +175,18 @@
         "detail": "09:00 – 18:00"
       }
     },
+    "types": {
+      "label": "Nakliyat türü",
+      "corporate": "Kurumsal Nakliyat",
+      "home": "Evden Eve Nakliyat"
+    },
     "fields": {
       "fullName": "Ad Soyad",
       "company": "Firma Adı",
       "optional": "(Opsiyonel)",
       "cargo": "Taşınacak Yük",
       "cargoPlaceholder": "Örn: 10 palet gıda ürünü",
+      "cargoPlaceholderHome": "Örn: 2+1 ev eşyası",
       "cargoWeight": "Yük Ağırlığı",
       "cargoWeightPlaceholder": "Örn: 2.5 ton",
       "fromAddress": "Çıkış Adresi",
@@ -185,14 +201,17 @@
       "ok": "Tamam"
     },
     "whatsapp": {
-      "greeting": "Merhaba, nakliye hizmeti hakkında bilgi almak istiyorum.",
+      "serviceType": "Nakliyat Türü",
+      "greetingCorporate": "Merhaba, kurumsal nakliyat hizmeti hakkında bilgi almak istiyorum.",
+      "greetingHome": "Merhaba, evden eve nakliyat hizmeti hakkında bilgi almak istiyorum.",
       "fullName": "Ad Soyad",
       "company": "Firma",
       "cargo": "Taşınacak Yük",
       "cargoWeight": "Yük Ağırlığı",
       "fromAddress": "Çıkış Adresi",
       "toAddress": "Varış Adresi",
-      "closing": "Bu taşıma için fiyat ve detaylı bilgi almak istiyorum. Yardımcı olabilir misiniz?"
+      "closingCorporate": "Bu taşıma için fiyat ve detaylı bilgi almak istiyorum. Yardımcı olabilir misiniz?",
+      "closingHome": "Bu evden eve taşıma için fiyat ve detaylı bilgi almak istiyorum. Yardımcı olabilir misiniz?"
     }
   },
   "footer": {

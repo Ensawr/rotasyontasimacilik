@@ -1,12 +1,18 @@
 import { useEffect, useRef, useState } from 'react';
 
-function Reveal({ children, className = '', delay = 0 }) {
+function Reveal({ children, className = '', delay = 0, variant = 'up' }) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (media.matches) {
+      setVisible(true);
+      return undefined;
+    }
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -15,7 +21,7 @@ function Reveal({ children, className = '', delay = 0 }) {
           observer.unobserve(el);
         }
       },
-      { threshold: 0.12, rootMargin: '0px 0px -48px 0px' }
+      { threshold: 0.14, rootMargin: '0px 0px -56px 0px' }
     );
 
     observer.observe(el);
@@ -25,7 +31,14 @@ function Reveal({ children, className = '', delay = 0 }) {
   return (
     <div
       ref={ref}
-      className={`reveal ${visible ? 'reveal-visible' : ''} ${className}`}
+      className={[
+        'reveal',
+        `reveal-${variant}`,
+        visible ? 'reveal-visible' : '',
+        className,
+      ]
+        .filter(Boolean)
+        .join(' ')}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {children}

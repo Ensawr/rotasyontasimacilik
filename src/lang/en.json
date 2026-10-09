@@ -18,9 +18,13 @@
     "toDark": "Switch to dark theme",
     "toggle": "Toggle theme"
   },
+  "common": {
+    "scrollTop": "Back to top"
+  },
   "loader": {
     "aria": "Loading",
-    "text": "Your cargo is on the way..."
+    "text": "Your cargo is on the way...",
+    "tagline": "Everywhere in Türkiye, safely."
   },
   "seo": {
     "home": {
@@ -82,24 +86,30 @@
         "text": "Through our nationwide network, we manage intercity freight and cargo shipments on regular lines. Route discipline is our priority for fast and consistent deliveries."
       }
     },
-    "processTitle": "How We Work",
-    "processText": "We handle every transport request with a tailored operations plan rather than a one-size-fits-all procedure. Clear communication throughout the process helps minimize surprises.",
+    "processEyebrow": "How It Works",
+    "processTitleLead": "In 5 steps",
+    "processTitleAccent": "reliable transport",
+    "processText": "We handle every transport request with a tailored operations plan. Clear communication throughout the process helps minimize surprises.",
     "steps": {
       "01": {
-        "title": "Request & Analysis",
-        "text": "We listen to your cargo type, delivery point, and timing expectations to define the most suitable transport model."
+        "title": "Request",
+        "text": "Your shipment request is received; we quickly listen to your needs via WhatsApp or the form and guide you next."
       },
       "02": {
-        "title": "Planning",
-        "text": "We clarify the route, vehicle type, and loading setup, and clearly define responsibilities at every stage."
+        "title": "Quote",
+        "text": "Based on your cargo details we select the right vehicle and route, then share a clear and transparent quote."
       },
       "03": {
-        "title": "Shipment",
-        "text": "Our operations team sends your cargo safely on the road and monitors the process until arrival."
+        "title": "Planning",
+        "text": "The most efficient route is set; date, vehicle type, and delivery window are confirmed in writing."
       },
       "04": {
+        "title": "Shipment",
+        "text": "Your cargo leaves safely on the road and stays monitored across our nationwide operations network."
+      },
+      "05": {
         "title": "Delivery",
-        "text": "At arrival we complete checks and handover, report the process, and collect feedback for future shipments."
+        "text": "At arrival we complete checks and handover, report the process, and stand ready for your next shipment."
       }
     },
     "ctaTitle": "Let's plan your transport together",
@@ -165,12 +175,18 @@
         "detail": "09:00 – 18:00"
       }
     },
+    "types": {
+      "label": "Shipping type",
+      "corporate": "Corporate Freight",
+      "home": "Home Moving"
+    },
     "fields": {
       "fullName": "Full Name",
       "company": "Company Name",
       "optional": "(Optional)",
       "cargo": "Cargo Description",
       "cargoPlaceholder": "e.g. 10 pallets of food products",
+      "cargoPlaceholderHome": "e.g. 2+1 apartment belongings",
       "cargoWeight": "Cargo Weight",
       "cargoWeightPlaceholder": "e.g. 2.5 tons",
       "fromAddress": "Pickup Address",
@@ -185,14 +201,17 @@
       "ok": "OK"
     },
     "whatsapp": {
-      "greeting": "Hello, I would like information about your freight services.",
+      "serviceType": "Shipping Type",
+      "greetingCorporate": "Hello, I would like information about your corporate freight services.",
+      "greetingHome": "Hello, I would like information about your home moving services.",
       "fullName": "Full Name",
       "company": "Company",
       "cargo": "Cargo",
       "cargoWeight": "Cargo Weight",
       "fromAddress": "Pickup Address",
       "toAddress": "Delivery Address",
-      "closing": "I would like a quote and detailed information for this shipment. Can you help?"
+      "closingCorporate": "I would like a quote and detailed information for this shipment. Can you help?",
+      "closingHome": "I would like a quote and detailed information for this home move. Can you help?"
     }
   },
   "footer": {

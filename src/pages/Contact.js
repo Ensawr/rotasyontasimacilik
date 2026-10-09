@@ -21,16 +21,35 @@ const errorInputClassName =
 function Contact() {
   const { t } = useTranslation();
   const location = useLocation();
+  const [serviceType, setServiceType] = useState('corporate');
   const [errors, setErrors] = useState({});
   const [missingFields, setMissingFields] = useState([]);
+
+  const isCorporate = serviceType === 'corporate';
 
   const requiredFields = [
     { name: 'fullName', label: t('contact.fields.fullName') },
     { name: 'cargo', label: t('contact.fields.cargo') },
-    { name: 'cargoWeight', label: t('contact.fields.cargoWeight') },
+    ...(isCorporate
+      ? [{ name: 'cargoWeight', label: t('contact.fields.cargoWeight') }]
+      : []),
     { name: 'fromAddress', label: t('contact.fields.fromAddress') },
     { name: 'toAddress', label: t('contact.fields.toAddress') },
   ];
+
+  const selectServiceType = (type) => {
+    setServiceType(type);
+    setErrors({});
+    setMissingFields([]);
+  };
+
+  const typeTabClass = (type) =>
+    [
+      'flex-1 rounded-md px-3 py-2.5 text-center text-sm font-semibold uppercase tracking-wide transition sm:text-base',
+      serviceType === type
+        ? 'bg-brand-900 text-white dark:bg-accent-500 dark:text-ink'
+        : 'bg-white text-brand-800 hover:bg-slate-100 dark:bg-ink dark:text-white/80 dark:hover:bg-white/10',
+    ].join(' ');
 
   const infoCards = [
     {
@@ -116,22 +135,33 @@ function Contact() {
     setMissingFields([]);
 
     const lines = [
-      t('contact.whatsapp.greeting'),
+      isCorporate
+        ? t('contact.whatsapp.greetingCorporate')
+        : t('contact.whatsapp.greetingHome'),
       '',
+      `${t('contact.whatsapp.serviceType')}: ${
+        isCorporate ? t('contact.types.corporate') : t('contact.types.home')
+      }`,
       `${t('contact.whatsapp.fullName')}: ${values.fullName}`,
     ];
 
-    if (values.company) {
+    if (isCorporate && values.company) {
       lines.push(`${t('contact.whatsapp.company')}: ${values.company}`);
     }
 
+    lines.push(`${t('contact.whatsapp.cargo')}: ${values.cargo}`);
+
+    if (isCorporate) {
+      lines.push(`${t('contact.whatsapp.cargoWeight')}: ${values.cargoWeight}`);
+    }
+
     lines.push(
-      `${t('contact.whatsapp.cargo')}: ${values.cargo}`,
-      `${t('contact.whatsapp.cargoWeight')}: ${values.cargoWeight}`,
       `${t('contact.whatsapp.fromAddress')}: ${values.fromAddress}`,
       `${t('contact.whatsapp.toAddress')}: ${values.toAddress}`,
       '',
-      t('contact.whatsapp.closing')
+      isCorporate
+        ? t('contact.whatsapp.closingCorporate')
+        : t('contact.whatsapp.closingHome')
     );
 
     const phone = WHATSAPP_NUMBER.replace(/\D/g, '');
@@ -154,12 +184,12 @@ function Contact() {
       />
 
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
-        <Reveal>
+        <Reveal variant="fade">
           <header className="max-w-2xl">
             <p className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-accent-600 dark:text-accent-400 sm:text-sm">
               {t('contact.eyebrow')}
             </p>
-            <h1 className="mt-2 font-display text-3xl font-bold uppercase tracking-wide text-brand-900 dark:text-white sm:text-4xl md:text-5xl">
+            <h1 className="section-heading mt-2 font-display text-3xl font-bold uppercase tracking-wide text-brand-900 dark:text-white sm:text-4xl md:text-5xl">
               {t('contact.title')}
             </h1>
             <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-400 sm:text-lg">
@@ -168,7 +198,7 @@ function Contact() {
             <p className="mt-3 text-sm">
               <Link
                 to="/#hizmetler"
-                className="font-semibold text-accent-600 transition hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300"
+                className="link-underline font-semibold text-accent-600 transition hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300"
               >
                 {t('about.ctaServices')}
               </Link>
@@ -178,9 +208,9 @@ function Contact() {
 
         <div className="mt-10 grid gap-4 sm:mt-12 sm:grid-cols-3 sm:gap-5">
           {infoCards.map(({ key, title, text, detail, Icon }, index) => (
-            <Reveal key={key} delay={index * 90}>
+            <Reveal key={key} delay={index * 100} variant="scale">
               <div className="card-hover h-full border border-brand-100 bg-brand-50 p-5 sm:p-6 dark:border-white/10 dark:bg-ink-raised">
-                <div className="flex h-11 w-11 items-center justify-center bg-brand-700 text-white dark:bg-accent-500 dark:text-ink">
+                <div className="flex h-11 w-11 items-center justify-center bg-brand-700 text-white transition-transform duration-300 group-hover:scale-105 dark:bg-accent-500 dark:text-ink">
                   <Icon className="size-5" aria-hidden />
                 </div>
                 <h2 className="mt-4 font-display text-lg font-semibold uppercase tracking-wide text-brand-800 dark:text-white">
@@ -197,13 +227,43 @@ function Contact() {
           ))}
         </div>
 
-        <Reveal delay={120}>
+        <Reveal delay={140} variant="up">
           <form
             id="teklif-formu"
             onSubmit={handleSubmit}
             noValidate
             className="mt-8 flex scroll-mt-28 flex-col gap-5 border border-brand-100 bg-brand-50 p-4 sm:mt-10 sm:scroll-mt-32 sm:p-6 dark:border-white/10 dark:bg-ink-raised"
           >
+          <div>
+            <p className="mb-2 block text-sm font-semibold text-brand-900 dark:text-white">
+              {t('contact.types.label')}
+            </p>
+            <div
+              className="flex gap-2 rounded-md border border-slate-200 bg-slate-100 p-1 dark:border-white/10 dark:bg-white/5"
+              role="tablist"
+              aria-label={t('contact.types.label')}
+            >
+              <button
+                type="button"
+                role="tab"
+                aria-selected={isCorporate}
+                className={typeTabClass('corporate')}
+                onClick={() => selectServiceType('corporate')}
+              >
+                {t('contact.types.corporate')}
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected={!isCorporate}
+                className={typeTabClass('home')}
+                onClick={() => selectServiceType('home')}
+              >
+                {t('contact.types.home')}
+              </button>
+            </div>
+          </div>
+
           <div>
             <label htmlFor="fullName" className="block text-sm font-semibold text-brand-900 dark:text-white">
               {t('contact.fields.fullName')}
@@ -218,21 +278,52 @@ function Contact() {
             />
           </div>
 
-          <div>
-            <label htmlFor="company" className="block text-sm font-semibold text-brand-900 dark:text-white">
-              {t('contact.fields.company')}{' '}
-              <span className="font-normal text-slate-500">{t('contact.fields.optional')}</span>
-            </label>
-            <input
-              id="company"
-              name="company"
-              type="text"
-              autoComplete="organization"
-              className={normalInputClassName}
-            />
-          </div>
+          {isCorporate ? (
+            <div>
+              <label htmlFor="company" className="block text-sm font-semibold text-brand-900 dark:text-white">
+                {t('contact.fields.company')}{' '}
+                <span className="font-normal text-slate-500">{t('contact.fields.optional')}</span>
+              </label>
+              <input
+                id="company"
+                name="company"
+                type="text"
+                autoComplete="organization"
+                className={normalInputClassName}
+              />
+            </div>
+          ) : null}
 
-          <div className="grid gap-5 sm:grid-cols-2">
+          {isCorporate ? (
+            <div className="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label htmlFor="cargo" className="block text-sm font-semibold text-brand-900 dark:text-white">
+                  {t('contact.fields.cargo')}
+                </label>
+                <input
+                  id="cargo"
+                  name="cargo"
+                  type="text"
+                  placeholder={t('contact.fields.cargoPlaceholder')}
+                  className={getInputClass('cargo')}
+                  onChange={() => clearFieldError('cargo')}
+                />
+              </div>
+              <div>
+                <label htmlFor="cargoWeight" className="block text-sm font-semibold text-brand-900 dark:text-white">
+                  {t('contact.fields.cargoWeight')}
+                </label>
+                <input
+                  id="cargoWeight"
+                  name="cargoWeight"
+                  type="text"
+                  placeholder={t('contact.fields.cargoWeightPlaceholder')}
+                  className={getInputClass('cargoWeight')}
+                  onChange={() => clearFieldError('cargoWeight')}
+                />
+              </div>
+            </div>
+          ) : (
             <div>
               <label htmlFor="cargo" className="block text-sm font-semibold text-brand-900 dark:text-white">
                 {t('contact.fields.cargo')}
@@ -241,25 +332,12 @@ function Contact() {
                 id="cargo"
                 name="cargo"
                 type="text"
-                placeholder={t('contact.fields.cargoPlaceholder')}
+                placeholder={t('contact.fields.cargoPlaceholderHome')}
                 className={getInputClass('cargo')}
                 onChange={() => clearFieldError('cargo')}
               />
             </div>
-            <div>
-              <label htmlFor="cargoWeight" className="block text-sm font-semibold text-brand-900 dark:text-white">
-                {t('contact.fields.cargoWeight')}
-              </label>
-              <input
-                id="cargoWeight"
-                name="cargoWeight"
-                type="text"
-                placeholder={t('contact.fields.cargoWeightPlaceholder')}
-                className={getInputClass('cargoWeight')}
-                onChange={() => clearFieldError('cargoWeight')}
-              />
-            </div>
-          </div>
+          )}
 
           <div>
             <label htmlFor="fromAddress" className="block text-sm font-semibold text-brand-900 dark:text-white">
@@ -289,7 +367,7 @@ function Contact() {
 
           <button
             type="submit"
-            className="inline-flex w-full items-center justify-center gap-2 bg-accent-500 px-6 py-3 font-display text-base font-semibold uppercase tracking-wider text-white transition hover:bg-accent-600 sm:w-auto sm:text-lg"
+            className="btn-lift inline-flex w-full items-center justify-center gap-2 bg-accent-500 px-6 py-3 font-display text-base font-semibold uppercase tracking-wider text-white transition hover:bg-accent-600 sm:w-auto sm:text-lg"
           >
             <span className="inline-flex size-5 shrink-0 items-center justify-center">
               <FontAwesomeIcon icon={faWhatsapp} className="h-full w-full" aria-hidden />
